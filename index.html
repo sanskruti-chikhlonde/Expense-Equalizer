@@ -4,48 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Equalizer | Split Expenses Easily</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
 </head>
 <body>
     <header>
-        <h1>EXPENSE EQUALIZER</h1>
-        <p>Calculate • Split • Share</p>
-    </header>
+         <div class="logo-box">
+        <div class="logo">
+    <img src="assets/logo/logo.png" alt="Expense Equalizer Logo">
+</div>
 
-    <main>
-        <section class="expense details">
-           <h2>Expense Details</h2>
-           <form>
+        <i class="fa-solid fa-sparkles sparkle sparkle1"></i>
+        <i class="fa-solid fa-sparkles sparkle sparkle2"></i>
+    </div>
 
-              <leble for="billAmount">Total Bill Amount</leble>
-              <input type="number" id="billAmount" placeholder="Enter Total Bill Amount:">
+    <h1>
+        <span class="expense">Expense</span>
+        <span class="equalizer">Equalizer</span>
+    </h1>
 
-              <leble for="people">Number of people</leble>
-              <input type="number" id="people" placeholder="Enter Number Of People:">
+    <p>Calculate • Split • Share</p>
 
-              <leble for="tip">Tip Percentage</leble>
-              <input type="number" id="tip" placeholder="Enter Tip Percentage">
+</header>
 
-              <button type="button">Calculate</button>
+    <main class="container">
+        <section class="expense-card">
+           <div class="card-title">
+
+    <div class="title-icon">
+        <i class="fa-solid fa-receipt"></i>
+    </div>
+
+        <h2>Expense Details</h2>
+    </div>
+        <form>
+
+            <div class="input-group">
+              <label for="billAmount">
+                Total Bill Amount
+            </label>
+
+        <div class="input-box">
+            <div class="input-icon">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+
+            <input 
+              type="number" 
+              id="billAmount" 
+              placeholder="Enter Total Bill Amount:">
+
+            </div>
+        </div>
+
+            <div class="input-group">
+              <label for="people">
+                Number of people
+            </label>
+
+        <div class="input-box">   
+            <div class="input-icon">
+            <i class="fa-solid fa-users"></i>
+            </div>
+
+            <input 
+              type="number" 
+              id="people" 
+              placeholder="Enter Number Of People:">
+            </div>
+        </div> 
+
+            <div class="input-group">
+              <label for="tip">
+                Tip Percentage
+            </label>
+            
+        <div class="input-box">
+
+             <div class="input-icon">
+            <i class="fa-solid fa-percent"></i>
+            </div>
+
+            <input 
+              type="number" 
+              id="tip" 
+              placeholder="Enter Tip Percentage">
+            </div>
+        </div>
+
+              <button type="button">
+                <i class="fa-solid fa-calculator"></i>
+                Calculate
+            </button>
 
            </form>
         </section>
 
-        <!--result-section-->
+        <!-- Result Section -->
 
-        <section class="result">
-            <h2>Result</h2>
+<section class="result">
+    <div class="card-title">
+    <div class="title-icon">
+        <i class="fa-solid fa-chart-simple"></i>
+    </div>
+       <h2>Result</h2>
+    </div>
 
-            <p>Total Bill: </p>
-            <p>Tip Amount: </p>
-            <p>Final Bill: </p>
-            <p>Each Person Pays: </p>
+    <div class="result-item">
+        <p>Total Bill</p>
+        <span id="totalBill">₹0.00</span>
+    </div>
 
-        </section>
+    <div class="result-item">
+        <p>Tip Amount</p>
+        <span id="tipAmount">₹0.00</span>
+    </div>
+
+    <div class="result-item">
+        <p>Final Bill</p>
+        <span id="finalBill">₹0.00</span>
+    </div>
+
+    <div class="result-item total">
+        <p>
+            <i class="fa-solid fa-user-group"></i>
+            Each Person Pays
+        </p>
+        <span id="perPerson">₹0.00</span>
+    </div>
+</section>
+
     </main>
 
     <footer>
-        <p> Designed & Developed by Sanskruti • © 2026 EXPENSE EQUALIZER  </p>
+        <p> 
+            Designed & Developed by Sanskruti • © 2026 EXPENSE EQUALIZER 
+        </p>
     </footer>
 </body>
 </html>
