@@ -32,10 +32,17 @@ calculateBtn.addEventListener("click", function () {
         alert("Please enter a valid tip percentage.");
         return;
     }
-   
+    
+    //calculation
+
     const tipAmount = (bill * tip) / 100;
     const finalBill = bill + tipAmount;
     const perPerson = finalBill / people;
+
+    totalBillOutput.textContent = `₹${bill.toFixed(2)}`;
+    tipAmountOutput.textContent = `₹${tipAmount.toFixed(2)}`;
+    finalBillOutput.textContent = `₹${finalBill.toFixed(2)}`;
+    perPersonOutput.textContent = `₹${perPerson.toFixed(2)}`;
 
     console.log(bill);
     console.log(people);
