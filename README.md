@@ -21,7 +21,7 @@ A beginner-friendly JavaScript project that calculates and splits expenses fairl
 
 ## Project Preview
 
-![Expense Equalizer Preview](./Expense-Equalizer/assets/screenshort/home.png)
+![Expense Equalizer Preview](./assets/screenshort/home.png)
 
 ## How to Run
 
