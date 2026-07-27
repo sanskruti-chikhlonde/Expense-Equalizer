@@ -58,4 +58,8 @@ Through this project, I practiced and strengthened my understanding of:
 
 B.com (Computer Application) | Aspiring MERN Stack Web Developer 
 
-GitHub: https://github.com/sanskruti-chikhlonde
+## Links
+
+**Live Website** [https://expense-equalizer.netlify.app/]
+
+**GitHub**: https://github.com/sanskruti-chikhlonde/Expense-Equalizer
