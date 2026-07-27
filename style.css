@@ -37,6 +37,7 @@ header{
     justify-content: center;
     align-items: center;
     margin: auto;
+
 }
 
 .logo img{
@@ -336,7 +337,7 @@ button:active{
 
 .result-item.total p,
 .result-item.total span{
-    color:    white;
+    color: white;
 }
 
 /* ---- Footer ----*/
