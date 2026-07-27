@@ -1,3 +1,5 @@
+// Get Element
+
 const billInput = document.getElementById("billAmount");
 const peopleInput = document.getElementById("people");
 const tipInput = document.getElementById("tip");
@@ -8,15 +10,19 @@ const perPersonOutput = document.getElementById("perPerson");
 
 const calculateBtn = document.getElementById("calculateBtn");
 
+// Event Listener
+
 calculateBtn.addEventListener("click", function () {
 
     console.log("Button Clicked");
 
+    // read user input
+    
     const bill = Number(billInput.value);
     const people = Number(peopleInput.value);
     const tip = Number(tipInput.value);
     
-    //validation
+    // validation
 
     if (bill <=0) {
         alert("Please enter a valid bill amount.");
@@ -33,11 +39,13 @@ calculateBtn.addEventListener("click", function () {
         return;
     }
     
-    //calculation
+    // calculation
 
     const tipAmount = (bill * tip) / 100;
     const finalBill = bill + tipAmount;
     const perPerson = finalBill / people;
+ 
+    // Display Result
 
     totalBillOutput.textContent = `₹${bill.toFixed(2)}`;
     tipAmountOutput.textContent = `₹${tipAmount.toFixed(2)}`;
